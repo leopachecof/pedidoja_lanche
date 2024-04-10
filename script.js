@@ -155,7 +155,7 @@ function atualizarCarrinho() {
 function criarBotao(texto, onClick) {
     const botao = document.createElement('button');
     botao.textContent = texto;
-    botao.classList.add('btn', 'btn-outline-light', 'btn-lg', 'mx-1');
+    botao.classList.add('btn', 'btn-secondary', 'btn-lg', 'mx-1');
     botao.addEventListener('click', onClick);
     return botao;
 }

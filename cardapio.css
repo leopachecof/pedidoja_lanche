@@ -13,9 +13,11 @@
 }
 
 html {
+    /* display: flex; */
+    /* justify-content: center; */
     /* width: 100vw; */
     /* height: 100vh; */
-    font-size: 62.5%;
+    font-size: 12px;
     /* overflow-x: hidden; */
     scroll-behavior: smooth;
     background-color: #1f1e1f;
@@ -23,7 +25,7 @@ html {
 
 /* Início NAVBAR */
 .navbar {
-    /* display: flex; */
+    display: flex;
     background-color: #1f1e1f;
     position: fixed; /* Adiciona posição fixa */
     top: 0; /* Coloca a navbar no topo da página */
@@ -31,19 +33,16 @@ html {
     z-index: 1000; /* Ajusta a ordem de empilhamento */
 }
 .navbar-brand{
-    width: 30%;
+    width: 20%;
 }
 /* Menu do Toggler */
 .navbar-collapse{
-    width: 70%; /*margem da direita*/
     display: flex;
+    width: 70%; /*margem da direita*/
     justify-content:center ; /*menu centralizado*/
 }
-.list-menu li{
-    padding: 10px;
-}
 .navbar-toggler{
-    margin: 0 100px;
+    margin: 0 20px;
 }
 .logo {
     width: 70px;
@@ -55,7 +54,6 @@ html {
 .logo h3 {
     color: white;
     margin: auto;
-    /* font-size: 1.6rem; */
 }
 .logo img {
     width: 100%;
@@ -104,7 +102,7 @@ html {
     padding: 3px;
     margin: 5px;
 }
-.categoria h3{
+.categoria p {
     color: #3f3f3f;
     margin-left: 10px;
 }
@@ -120,6 +118,7 @@ html {
     align-items: center;
     padding-top: 12vh;
     background-color: rgb(237, 238, 230);
+    margin-top: 20px;
 }
 .card {
     box-shadow: 1px 1px 5px rgba(69, 69, 69, 0.449);
@@ -158,17 +157,12 @@ html {
     justify-content: center;
     text-align: center;
 }
-.card-carrinho {
-    width: 550px;
-    padding: 10px;
-    color: #373737;
-    border-radius: 3px;
-
-/* ////////////////////////////////////////////// */
+.lista-carrinho {
+    font-size: 1.3rem !important;
 }
 .carrinho h3 {
     font-size: 2.5rem;
-    margin: 30px;
+    margin: 10px;
 }
 .btn-carrinho div{
     font-size: 1.5rem;
@@ -190,23 +184,23 @@ html {
     display: flex;
     justify-content: center;
     background-color: rgb(237, 238, 230);
+    font-size: 2rem;
 }
 .checkout{
     min-width: 20vw;
     max-width: 90vw;
     display: grid;
-    font-size: 2vw;
     background-color: rgb(255, 255, 255);
     border-radius: 3px;
     padding: 3px;
     margin: 5vw;
-
-
-    
 }
+.checkout {
+    font-size: 1.6rem;
+}
+
 .card-checkout {
     color: #373737;
-    font-size: medium;
 }
 .card-checkout h3{
     text-align: center;
@@ -269,7 +263,7 @@ html {
 
 /* Início CONTATOS */
 .contatos {
-    width: 100%;
+    /* width: 100%; */
     background-color: #1f1e1f;
     display: flex;
     flex-direction: column;
@@ -279,16 +273,14 @@ html {
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
-.contatos h2 {
-    font-size: 4rem;
+/* .contatos h3 {
+    font-size: 1rem;
     margin-bottom: 3rem;
     padding: 1%;
-}
+} */
 .contatos-secao {
-    width: 650px;
     display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
+    /* justify-content: space-between; */
 }
 .contatos-secao div {
     cursor: pointer;
